@@ -1,0 +1,14 @@
+{
+  "name": "datavisualisation-barchart",
+  "version": "1.0.0",
+  "description": "Data Visualisation Project",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

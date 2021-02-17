@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" id='viewport-meta'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+    <script src="https://d3js.org/d3-color.v1.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="https://unpkg.com/topojson-client@2"></script>
+    <script src="https://d3js.org/d3-array.v2.min.js"></script>
+    <script src="https://d3js.org/d3-geo.v2.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src='script.js'></script>
+    <link rel="stylesheet" href='style.css' />
+    <title>Data Visualisation with D3</title>
+</head>
+
+<body>
+    <div class="css-slider-wrapper">
+        <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
+        <input type="radio" name="slider" class="slide-radio2" id="slider_2">
+        <input type="radio" name="slider" class="slide-radio3" id="slider_3">
+        <input type="radio" name="slider" class="slide-radio4" id="slider_4">
+
+        <!-- Slider Pagination -->
+        <div class="slider-pagination">
+            <label for="slider_1" class="page1"></label>
+            <label for="slider_2" class="page2"></label>
+            <label for="slider_3" class="page3"></label>
+            <label for="slider_4" class="page4"></label>
+        </div>
+
+        <!-- Slider #1 -->
+        <div class="slider slide-1">
+            <div class="slider-content">
+                <div class='main'>
+                    <div class="container">
+                        <h1 class="title">The US GDP Values (1947 - 2015)</h1>
+                        <div class="barChart"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="number-pagination">
+                <span>1</span>
+            </div>
+        </div>
+
+        <!-- Slider #2 -->
+        <div class="slider slide-2">
+            <div class="slider-content">
+                <div class='main'>
+                    <div class="container">
+                        <h1 class='title'>Doping in Professional Bicycle Racing</h1>
+                        <h2 class='sub-title'>35 Fastest times up Alpe d'Huez</h2>
+                        <div class='scatterChart'></div>
+                    </div>
+                </div>
+            </div>
+            <div class="number-pagination">
+                <span>2</span>
+            </div>
+        </div>
+
+
+        <!-- Slider #3 -->
+        <div class="slider slide-3">
+            <div class="slider-content">
+                <div class='main'>
+                    <div class="container">
+                        <h1 class='title'>Monthly Global Land-Surface Temperature</h1>
+                        <h2 class='sub-title'>1753 - 2015: base temperature 8.66℃</h2>
+                        <div class='heatChart'></div>
+                    </div>
+                </div>
+            </div>
+            <div class="number-pagination">
+                <span>3</span>
+            </div>
+        </div>
+
+        <!-- Slider #4 -->
+        <div class="slider slide-4">
+            <div class="slider-content">
+                <div class='main'>
+                    <div class="container-geo">
+                        <h1 class='title'>United States Educational Attainment</h1>
+                        <h2 class='sub-title-geo'>Percentage of adults age 25 and older with a bachelor's degree or
+                            higher (2010-2014)</h2>
+                        <div class='geoChart'></div>
+                    </div>
+                </div>
+            </div>
+            <div class="number-pagination">
+                <span>4</span>
+            </div>
+        </div>
+
+
+</body>
+
+</html>
